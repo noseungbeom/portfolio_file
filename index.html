@@ -8,11 +8,7 @@
     <title>노승범 포트폴리오</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        body {
-            height: 3000px;
-        }
-    </style>
+
 </head>
 
 <body>
@@ -126,6 +122,9 @@
                     </section>
                     <div id="portfolio">
                         <div class="cont">
+                            <div class="mainname">
+                                <h7>Portfolio</h7>
+                            </div>
                             <div class="box1">
                                 <div class="youtube">
                                     <iframe src="https://www.youtube.com/embed/O3u0RO5VW8Y" title="YouTube video player"
@@ -267,6 +266,34 @@
                     </p>
                 </footer>
             </div>
+            <script src="js/jquery-3.6.1.min.js"></script>
+            <script>
+                let winHeight = $(window).height();
+                $(window).on('resize', function () {
+                    winHeight = $(window).height();
+                });
+
+                $('ul li').on('click', function () {
+                    //$(this).addClass('on').siblings().removeClass('on');
+                    let i = $(this).index();
+                    //console.log(i);
+                    $('html, body').animate({
+                        scrollTop: winHeight * i
+                    });
+                });
+
+                function scrollPage() {
+                    let scr = $(window).scrollTop();
+                    for (let i = 0; i < $('ul li').length; i++) {
+                        if (scr >= winHeight * i && scr < winHeight * (i + 1)) {
+                            $('ul li').removeClass('on');
+                            $('ul li').eq(i).addClass('on');
+                        }//if
+                    } //for
+                }//function scrollPage
+                $(window).on('scroll', scrollPage);
+                scrollPage();
+            </script>
 </body>
 
 </html>
