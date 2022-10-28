@@ -226,6 +226,11 @@ div .colorbar6 {
     position: relative;
 }
 
+.cont .mainname {
+    font-size: 100px;
+    margin-bottom: 70px;
+    margin-left: 280px;
+}
 
 .cont>div .txt1 {
     width: 600px;
@@ -262,7 +267,7 @@ div .colorbar6 {
 .cont>div .txt1 p {
     width: 550px;
     height: 100%;
-    margin-top: -175px;
+    margin-top: -165px;
     margin-left: 310px;
     font-size: 23px;
 }
@@ -287,7 +292,7 @@ div .colorbar6 {
 .cont>div .txt2 p {
     width: 550px;
     height: 100%;
-    margin-top: -175px;
+    margin-top: -165px;
     margin-left: -45px;
     font-size: 23px;
 }
@@ -305,7 +310,7 @@ div .colorbar6 {
 #footer {
     width: 100%;
     font-size: 30px;
-    margin-top: 500px;
+    margin-top: 200px;
 }
 
 .foot {
