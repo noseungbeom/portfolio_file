@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'NEXON Lv1 Gothic OTF';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+img {
+    vertical-align: top;
+}
+
+
+/* .clear::after {
+    content: '';
+    display: block;
+    clear: both;
+} */
+
+/********** reset **********/
+#wrap {
+    min-width: 375px;
+    background: linear-gradient(#bddffb, #bbfffe, #d5e3fd, #b6beef, #8bb6ed, #bddffb, #bbfffe, #d5e3fd, #b6beef, #8bb6ed, #bddffb);
+}
+
+#header {
+    height: 150px;
+}
+
+
+/********** header, mainVisual 끝 **********/
+
+section {
+    width: calc(100% - 48px);
+    margin: 200px auto;
+}
+
+section h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+section h2 {
+    margin-top: 300px;
+    font-size: 30px;
+    text-align: right;
+}
+
+section h3 {
+    font-size: 30px;
+}
+
+section h4 {
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+section .tit {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+section .txt {
+    font-size: 30px;
+}
+
+/* section, icon */
+
+
+/* event */
+#footer {
+    width: 100%;
+    font-size: 30px;
+}
+
+.foot {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.mail_1 {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+/* 375px ~ 719px */
+
+/* 720px ~ 959px */
+
+@media all and (min-width:720px) {
+    .header_inner {
+        width: calc(100% - 100px);
+    }
+
+    .visual_img .mv_m {
+        display: none;
+    }
+
+    .visual_img .mv_pc {
+        display: block;
+        width: 100%;
+    }
+
+    section {
+        width: calc(100% - 100px);
+    }
+
+    section h1 {
+        font-size: 50px;
+        line-height: 100%;
+        color: #6aacef;
+    }
+
+    section h2 {
+        font-size: 130px;
+        line-height: 80%;
+        opacity: 30%;
+        margin-left: 200px;
+    }
+
+
+    .skill>li .txt {
+        font-size: 200px;
+    }
+
+    /* 960px ~ 1439px */
+
+    @media all and (min-width:960px) {
+        #header {
+            width: 100%;
+            height: 100px;
+            margin-left: 100px;
+
+        }
+
+        nav .gnb>li>a {
+            font-size: 30px;
+        }
+
+        nav .gnb {
+            display: flex;
+            width: 595px;
+            height: 120px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+        }
+
+        nav .gnb li {
+            position: relative;
+        }
+
+        nav .gnb>li>a {
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        nav .gnb>li:hover>a {
+            color: #0d884f;
+        }
+
+        section {
+            width: calc(100% - 120px);
+        }
+
+        .sb2 {
+            display: flex;
+        }
+
+        .sb2>li {
+            margin-left: 300px;
+        }
+
+        .sb>li {
+            width: calc(25% - 14px);
+        }
+
+        .sb>li .tit {
+            text-align: center;
+            font-weight: 600;
+            font-size: 30px;
+
+            transform: translatey(- 50%)
+        }
+
+        .sb>li .txt {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        .sb>li .exp {
+            margin-right: 14px;
+        }
+
+        .skill>li .txt {
+            font-size: 200px;
+        }
+
+        .skill .ad {
+            font-size: 16px;
+            color: #666;
+            display: inline-block;
+            position: relative;
+        }
+
+        .skill>li .ad {
+            padding-top: 100%;
+            /* 부모태그인 li의 width값을 기준으로 padding이 적용됨 */
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @media all and (min-width:1440px) {
+            .header_inner {
+                max-width: 1360px;
+            }
+
+            section {
+                max-width: 1130px;
+            }
+
+            .ft_inner {
+                max-width: 1360px;
+            }
+        }
+    }
+}
